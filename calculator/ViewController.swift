@@ -9,30 +9,34 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    //Mark: Display output
+    
+    
     @IBOutlet weak var display: UILabel!
     
-    //MARK: options
     var userIsInTheMiddleOfTyping = false
     
     //MARK: Number buttons action
     @IBAction func touchDigit(sender: UIButton) {
         let digit = sender.currentTitle!
-        let textCurrentlyOnDisplay = display.text!
-        if(userIsInTheMiddleOfTyping){
-            display.text = textCurrentlyOnDisplay + digit
-        } else if(Int(digit) == 0){}
-        else{
+        if userIsInTheMiddleOfTyping{
+            let textCurrentlyInDisplay = display.text!
+            display.text = textCurrentlyInDisplay + digit
+        } else{
             display.text = digit
-            userIsInTheMiddleOfTyping = true
         }
-             }
-    
-    //MARK: Clear button
-    @IBAction func clearButton(sender: UIButton) {
-        display.text = String(0)
-        userIsInTheMiddleOfTyping = false;
+        userIsInTheMiddleOfTyping = true
     }
+    
+    
+    @IBAction func performOperation(sender: AnyObject) {
+        if let mathematicalSymbol = sender.currentTitle{
+            if mathematicalSymbol == "π" {
+                display.text = String(M_PI)
+            }
+        }
+        
+    }
+    
+    
 }
 
