@@ -11,12 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var display: UILabel!
+    @IBOutlet private weak var display: UILabel!
     
-    var userIsInTheMiddleOfTyping = false
+   private var userIsInTheMiddleOfTyping = false
     
     //MARK: Number buttons action
-    @IBAction func touchDigit(sender: UIButton) {
+    @IBAction private func touchDigit(sender: UIButton) {
         let digit = sender.currentTitle!
         if userIsInTheMiddleOfTyping{
             let textCurrentlyInDisplay = display.text!
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         userIsInTheMiddleOfTyping = true
     }
     
-    var displayValue: Double {
+   private  var displayValue: Double {
         get{
             return Double(display.text!)!
         }
@@ -36,17 +36,17 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func performOperation(sender: AnyObject) {
-        if let mathematicalSymbol = sender.currentTitle{
-            if mathematicalSymbol == "π" {
-                displayValue = M_PI
-            }
-            if mathematicalSymbol == "√"{
-                displayValue = sqrt(displayValue)
-            }
-            
-        }
-    }
+    private var engine = CalcEngine()
     
+    @IBAction private func performOperation(sender: UIButton) {
+        if userIsInTheMiddleOfTyping{
+            engine.setOperand(displayValue)
+            userIsInTheMiddleOfTyping = false
+        }
+        if let mathematicalSymbol = sender.currentTitle{
+            engine.performOperation(mathematicalSymbol)
+        }
+        displayValue = engine.result
+    }
 }
 
