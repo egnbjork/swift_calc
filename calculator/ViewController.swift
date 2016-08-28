@@ -55,5 +55,14 @@ class ViewController: UIViewController {
         }
         displayValue = engine.result
     }
+    
+    //Mark: Clear button
+
+    @IBAction func clearAll(sender: UIButton) {
+        engine.clearContents()
+        displayValue = 0;
+        userIsInTheMiddleOfTyping = false
+    }
+    
 }
 

@@ -16,7 +16,7 @@ class CalcEngine{
         accumulator = operand
     }
     
-    var operations: Dictionary<String, Operation> = [
+    private var operations: Dictionary<String, Operation> = [
         "π": Operation.Constant(M_PI),
         "e": Operation.Constant(M_E),
         "√": Operation.UnaryOperation(sqrt),
@@ -28,7 +28,7 @@ class CalcEngine{
         "=": Operation.Equals
     ]
     
-    enum Operation{
+    private enum Operation{
         case Constant(Double)
         case UnaryOperation((Double) -> Double)
         case BinaryOperation((Double,Double) -> Double)
@@ -60,9 +60,14 @@ class CalcEngine{
         }
     }
     
-    struct PendingBinaryOperationInfo{
+    private struct PendingBinaryOperationInfo{
         var binaryFunc:(Double,Double)->Double
         var firstOperand: Double
+    }
+    
+    func clearContents(){
+        accumulator = 0.0
+        pending = nil
     }
     
     var result: Double{

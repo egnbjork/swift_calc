@@ -73,7 +73,7 @@
                                                                                     <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                                 </state>
                                                                                 <connections>
-                                                                                    <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kDX-lK-jZF"/>
+                                                                                    <action selector="clearAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o8O-lt-Hbk"/>
                                                                                 </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ss5-VK-pcL">
