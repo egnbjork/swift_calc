@@ -32,9 +32,9 @@ class ViewController: UIViewController {
     }
     
     //AC
-    @IBAction func clearAllButton(sender: UIButton) {
+    @IBAction func clearAll(sender: UIButton) {
         engine.clearContents()
-        displayValue = 0;
+        displayValue = 0.0;
         userIsInTheMiddleOfTyping = false
     }
     
