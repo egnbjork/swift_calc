@@ -14,11 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet private weak var display: UILabel!
     
     private var userIsInTheMiddleOfTyping = false
+    private var engine = CalcEngine()
     
-    //MARK: Number buttons action
+    //MARK: button actions
+    
+    //digits
     @IBAction private func touchDigit(sender: UIButton) {
         let digit = sender.currentTitle!
-        if userIsInTheMiddleOfTyping{
+        
+        if userIsInTheMiddleOfTyping{ //if not in the middle starts with zero
             let textCurrentlyInDisplay = display.text!
             display.text = textCurrentlyInDisplay + digit
         } else{
@@ -26,6 +30,23 @@ class ViewController: UIViewController {
         }
         userIsInTheMiddleOfTyping = true
     }
+    
+    //AC
+    @IBAction func clearAllButton(sender: UIButton) {
+        engine.clearContents()
+        displayValue = 0;
+        userIsInTheMiddleOfTyping = false
+    }
+    
+    //dot
+    @IBAction func dotButton(sender: UIButton) {
+        if(display.text!.containsString(".")){
+            return
+        }
+        display.text! = display.text! + "."
+        userIsInTheMiddleOfTyping = true
+    }
+    
     
     private  var displayValue: Double {
         get{
@@ -43,8 +64,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private var engine = CalcEngine()
-    
+    //Mark: making math
     @IBAction private func performOperation(sender: UIButton) {
         if userIsInTheMiddleOfTyping{
             engine.setOperand(displayValue)
@@ -54,14 +74,6 @@ class ViewController: UIViewController {
             engine.performOperation(mathematicalSymbol)
         }
         displayValue = engine.result
-    }
-    
-    //Mark: Clear button
-
-    @IBAction func clearAll(sender: UIButton) {
-        engine.clearContents()
-        displayValue = 0;
-        userIsInTheMiddleOfTyping = false
     }
     
 }

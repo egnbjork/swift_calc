@@ -261,7 +261,7 @@
                                                                                             <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         </state>
                                                                                         <connections>
-                                                                                            <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vMR-Q2-HYX"/>
+                                                                                            <action selector="dotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SdD-cV-aFo"/>
                                                                                         </connections>
                                                                                     </button>
                                                                                 </subviews>
