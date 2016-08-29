@@ -38,6 +38,16 @@ class ViewController: UIViewController {
         userIsInTheMiddleOfTyping = false
     }
     
+    //backspace
+    @IBAction func backspace(sender: UIButton) {
+        if(display.text!.startIndex == display.text!.endIndex.predecessor()){
+            display.text = "0"
+        } else{
+            display.text = display.text!.substringToIndex(display.text!.endIndex.predecessor())
+        }
+    }
+    
+    
     //dot
     @IBAction func dotButton(sender: UIButton) {
         if(display.text!.containsString(".")){
