@@ -10,11 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-    @IBOutlet private weak var display: UILabel!
-    
     private var userIsInTheMiddleOfTyping = false
     private var engine = CalcEngine()
+    
+    private  var displayValue: Double {
+        get{
+            return Double(display.text!)!
+        }
+        set{
+            let newValueInteger = Int(newValue)
+            
+            if(newValue - Double(newValueInteger) > 0){
+                display.text = String(newValue)
+            }
+            else{
+                display.text = String(newValueInteger);
+            }
+        }
+    }
+
+    @IBOutlet private weak var display: UILabel!
     
     //MARK: button actions
     
@@ -32,46 +47,35 @@ class ViewController: UIViewController {
     }
     
     //AC
-    @IBAction func clearAll(sender: UIButton) {
+    @IBAction private func clearAll(sender: UIButton) {
         engine.clearContents()
         displayValue = 0.0;
         userIsInTheMiddleOfTyping = false
     }
     
     //backspace
-    @IBAction func backspace(sender: UIButton) {
-        if(display.text!.startIndex == display.text!.endIndex.predecessor()){
-            display.text = "0"
+    @IBAction private func backspace(sender: UIButton) {
+        if(display.text!.characters.count == 1 ||
+            display.text!.characters.count == 2 && display.text!.hasPrefix("-")){ //hide minus
+            displayValue = 0
+            userIsInTheMiddleOfTyping = false
         } else{
             display.text = display.text!.substringToIndex(display.text!.endIndex.predecessor())
         }
     }
     
+    //change sign
+    @IBAction func changeSignButton(sender: UIButton) {
+        displayValue *= -1
+    }
     
     //dot
-    @IBAction func dotButton(sender: UIButton) {
+    @IBAction private func dotButton(sender: UIButton) {
         if(display.text!.containsString(".")){
             return
         }
         display.text! = display.text! + "."
         userIsInTheMiddleOfTyping = true
-    }
-    
-    
-    private  var displayValue: Double {
-        get{
-            return Double(display.text!)!
-        }
-        set{
-            let newValueInteger = Int(newValue)
-            
-            if(newValue - Double(newValueInteger) > 0){
-                display.text = String(newValue)
-            }
-            else{
-                display.text = String(newValueInteger);
-            }
-        }
     }
     
     //Mark: making math
