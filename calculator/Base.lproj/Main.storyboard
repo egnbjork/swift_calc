@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="UgK-uj-1YU">
-                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <rect key="frame" x="20" y="20" width="560" height="570"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Yc-qh-TjG">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="126"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="124"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.32308728448275864" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="83"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -30,21 +30,18 @@
                                         <variation key="heightClass=regular" misplaced="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="156"/>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="360" height="156"/>
-                                        </variation>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Hd-kM-JNE">
-                                        <rect key="frame" x="0.0" y="126" width="560" height="454"/>
+                                        <rect key="frame" x="0.0" y="124" width="560" height="446"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kha-Xy-9AD">
-                                                <rect key="frame" x="0.0" y="0.0" width="136" height="454"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kha-Xy-9AD">
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="446"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Y69-df-sgh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136" height="91"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Y69-df-sgh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="136" height="89"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7o-Qb-fRl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="68" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7o-Qb-fRl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="68" height="89"/>
                                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="45"/>
                                                                 <state key="normal" title="1/x">
@@ -59,15 +56,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="0.0" y="0.0" width="45" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b9P-Iw-OIW"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCh-lN-2MB">
-                                                                <rect key="frame" x="68" y="0.0" width="68" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCh-lN-2MB">
+                                                                <rect key="frame" x="68" y="0.0" width="68" height="89"/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="45"/>
                                                                 <state key="normal" title="%">
@@ -82,8 +79,8 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="45" y="0.0" width="45" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="45" y="0.0" width="45" height="60"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="68" y="0.0" width="68" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xvz-DM-Um1"/>
@@ -99,15 +96,15 @@
                                                         <variation key="widthClass=regular" ambiguous="YES">
                                                             <rect key="frame" x="0.0" y="0.0" width="90" height="91"/>
                                                         </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="60"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="136" height="122"/>
                                                         </variation>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6w0-ar-3Yk">
-                                                        <rect key="frame" x="0.0" y="91" width="136" height="90"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6w0-ar-3Yk">
+                                                        <rect key="frame" x="0.0" y="89" width="136" height="89"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktS-FA-Q1o">
-                                                                <rect key="frame" x="0.0" y="0.0" width="68" height="90"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktS-FA-Q1o">
+                                                                <rect key="frame" x="0.0" y="0.0" width="68" height="89"/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="45"/>
                                                                 <state key="normal" title="π">
@@ -122,15 +119,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="0.0" y="0.0" width="45" height="90"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="59"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YT8-6N-tYQ"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6r-cf-8qA">
-                                                                <rect key="frame" x="68" y="0.0" width="68" height="90"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6r-cf-8qA">
+                                                                <rect key="frame" x="68" y="0.0" width="68" height="89"/>
                                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="45"/>
                                                                 <state key="normal" title=")">
@@ -145,8 +142,8 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="45" y="0.0" width="45" height="90"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="45" y="0.0" width="45" height="59"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="68" y="0.0" width="68" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ybM-zK-Acu"/>
@@ -162,15 +159,15 @@
                                                         <variation key="widthClass=regular" ambiguous="YES">
                                                             <rect key="frame" x="0.0" y="91" width="90" height="90"/>
                                                         </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="60" width="90" height="59"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                            <rect key="frame" x="0.0" y="122" width="136" height="122"/>
                                                         </variation>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TzF-8m-HCN">
-                                                        <rect key="frame" x="0.0" y="181" width="136" height="91"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TzF-8m-HCN">
+                                                        <rect key="frame" x="0.0" y="178" width="136" height="89"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxz-kb-XV1">
-                                                                <rect key="frame" x="0.0" y="0.0" width="68" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxz-kb-XV1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="68" height="89"/>
                                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="45"/>
                                                                 <state key="normal" title="10ⁿ">
@@ -185,15 +182,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="0.0" y="0.0" width="45" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="123"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Odu-oe-hmN"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBa-nK-f3Y">
-                                                                <rect key="frame" x="68" y="0.0" width="68" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBa-nK-f3Y">
+                                                                <rect key="frame" x="68" y="0.0" width="68" height="89"/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="45"/>
                                                                 <state key="normal" title="(">
@@ -208,8 +205,8 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="45" y="0.0" width="45" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="45" y="0.0" width="45" height="60"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="68" y="0.0" width="68" height="123"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wn4-Va-c4W"/>
@@ -225,15 +222,15 @@
                                                         <variation key="widthClass=regular" ambiguous="YES">
                                                             <rect key="frame" x="0.0" y="181" width="90" height="91"/>
                                                         </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="119" width="90" height="60"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                            <rect key="frame" x="0.0" y="244" width="136" height="123"/>
                                                         </variation>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tfj-Ht-Loa">
-                                                        <rect key="frame" x="0.0" y="272" width="136" height="91"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tfj-Ht-Loa">
+                                                        <rect key="frame" x="0.0" y="267" width="136" height="90"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="061-nr-qER">
-                                                                <rect key="frame" x="0.0" y="0.0" width="68" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="061-nr-qER">
+                                                                <rect key="frame" x="0.0" y="0.0" width="68" height="90"/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
                                                                 <state key="normal" title="ⁿ√">
@@ -248,15 +245,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="0.0" y="0.0" width="45" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="59"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ygr-qq-iXx"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTd-vf-kRA">
-                                                                <rect key="frame" x="68" y="0.0" width="68" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTd-vf-kRA">
+                                                                <rect key="frame" x="68" y="0.0" width="68" height="90"/>
                                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
                                                                 <state key="normal" title="√">
@@ -271,8 +268,8 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="45" y="0.0" width="45" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="45" y="0.0" width="45" height="59"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="68" y="0.0" width="68" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbj-lw-rcE"/>
@@ -288,15 +285,15 @@
                                                         <variation key="widthClass=regular" ambiguous="YES">
                                                             <rect key="frame" x="0.0" y="272" width="90" height="91"/>
                                                         </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="179" width="90" height="59"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                            <rect key="frame" x="0.0" y="367" width="136" height="122"/>
                                                         </variation>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3mG-eR-RI2">
-                                                        <rect key="frame" x="0.0" y="363" width="136" height="91"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3mG-eR-RI2">
+                                                        <rect key="frame" x="0.0" y="357" width="136" height="89"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hc-XB-vU5">
-                                                                <rect key="frame" x="0.0" y="0.0" width="68" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hc-XB-vU5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="68" height="89"/>
                                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
                                                                 <state key="normal" title="xⁿ">
@@ -311,15 +308,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="0.0" y="0.0" width="37" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="37" height="60"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="azA-GB-6gG"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLZ-M9-tb9">
-                                                                <rect key="frame" x="68" y="0.0" width="68" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLZ-M9-tb9">
+                                                                <rect key="frame" x="68" y="0.0" width="68" height="89"/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
                                                                 <state key="normal" title="x²">
@@ -334,8 +331,8 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="37" y="0.0" width="53" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="37" y="0.0" width="53" height="60"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="68" y="0.0" width="68" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jod-Qd-EDS"/>
@@ -351,8 +348,8 @@
                                                         <variation key="widthClass=regular" ambiguous="YES">
                                                             <rect key="frame" x="0.0" y="363" width="90" height="91"/>
                                                         </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="238" width="90" height="60"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                            <rect key="frame" x="0.0" y="489" width="136" height="122"/>
                                                         </variation>
                                                     </stackView>
                                                 </subviews>
@@ -365,18 +362,18 @@
                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="90" height="454"/>
                                                 </variation>
-                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="298"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="611"/>
                                                 </variation>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LOH-IL-BxN">
-                                                <rect key="frame" x="146" y="0.0" width="414" height="454"/>
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LOH-IL-BxN">
+                                                <rect key="frame" x="146" y="0.0" width="414" height="446"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yj0-rX-V1S">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yj0-rX-V1S">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QER-Z6-mr5">
-                                                                <rect key="frame" x="0.0" y="0.0" width="104" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QER-Z6-mr5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="104" height="89"/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="0.40498383620689654" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
                                                                 <state key="normal" title="AC">
@@ -391,18 +388,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="0.0" y="0.0" width="165" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="165" height="60"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="54" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="clearAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o8O-lt-Hbk"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTw-yA-wjn">
-                                                                <rect key="frame" x="104" y="0.0" width="103" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTw-yA-wjn">
+                                                                <rect key="frame" x="104" y="0.0" width="103" height="89"/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="39"/>
                                                                 <state key="normal" title="⬅︎">
@@ -417,18 +411,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="165" y="0.0" width="165" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="165" y="0.0" width="165" height="60"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="65" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="54" y="0.0" width="53" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="backspace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ma0-v9-AUn"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohp-Ud-cfQ">
-                                                                <rect key="frame" x="207" y="0.0" width="104" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohp-Ud-cfQ">
+                                                                <rect key="frame" x="207" y="0.0" width="104" height="89"/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="0.40158943965517241" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title=" ±">
@@ -443,18 +434,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="330" y="0.0" width="165" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="330" y="0.0" width="165" height="60"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="130" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="107" y="0.0" width="54" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="changeSignButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rd0-T8-6sx"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ss5-VK-pcL">
-                                                                <rect key="frame" x="311" y="0.0" width="103" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ss5-VK-pcL">
+                                                                <rect key="frame" x="311" y="0.0" width="103" height="89"/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="÷">
@@ -469,11 +457,8 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="495" y="0.0" width="165" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="495" y="0.0" width="165" height="60"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="195" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="161" y="0.0" width="53" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BHv-jR-bVe"/>
@@ -489,18 +474,15 @@
                                                         <variation key="widthClass=regular" ambiguous="YES">
                                                             <rect key="frame" x="0.0" y="0.0" width="660" height="91"/>
                                                         </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="660" height="60"/>
-                                                        </variation>
-                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="260" height="113"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="214" height="122"/>
                                                         </variation>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-Hl-SNL">
-                                                        <rect key="frame" x="0.0" y="91" width="414" height="90"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-Hl-SNL">
+                                                        <rect key="frame" x="0.0" y="89" width="414" height="89"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plK-bs-KOF">
-                                                                <rect key="frame" x="0.0" y="0.0" width="104" height="90"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plK-bs-KOF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="104" height="89"/>
                                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="49"/>
                                                                 <state key="normal" title="7">
@@ -515,18 +497,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="0.0" y="0.0" width="165" height="90"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="165" height="59"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="54" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bN8-BC-AbZ"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgx-HF-faK">
-                                                                <rect key="frame" x="104" y="0.0" width="103" height="90"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgx-HF-faK">
+                                                                <rect key="frame" x="104" y="0.0" width="103" height="89"/>
                                                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="8">
@@ -541,18 +520,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="165" y="0.0" width="165" height="90"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="165" y="0.0" width="165" height="59"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="65" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="54" y="0.0" width="53" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7d-8t-rkm"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV6-vV-QV7">
-                                                                <rect key="frame" x="207" y="0.0" width="104" height="90"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV6-vV-QV7">
+                                                                <rect key="frame" x="207" y="0.0" width="104" height="89"/>
                                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="9">
@@ -567,18 +543,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="330" y="0.0" width="165" height="90"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="330" y="0.0" width="165" height="59"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="130" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="107" y="0.0" width="54" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="27Q-bS-x0M"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orh-E4-BYI">
-                                                                <rect key="frame" x="311" y="0.0" width="103" height="90"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orh-E4-BYI">
+                                                                <rect key="frame" x="311" y="0.0" width="103" height="89"/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="×">
@@ -593,11 +566,8 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="495" y="0.0" width="165" height="90"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="495" y="0.0" width="165" height="59"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="195" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="161" y="0.0" width="53" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZf-Pw-mS5"/>
@@ -613,18 +583,15 @@
                                                         <variation key="widthClass=regular" ambiguous="YES">
                                                             <rect key="frame" x="0.0" y="91" width="660" height="90"/>
                                                         </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="60" width="660" height="59"/>
-                                                        </variation>
-                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="113" width="260" height="113"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                            <rect key="frame" x="0.0" y="122" width="214" height="122"/>
                                                         </variation>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eqa-Dy-euP">
-                                                        <rect key="frame" x="0.0" y="181" width="414" height="91"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eqa-Dy-euP">
+                                                        <rect key="frame" x="0.0" y="178" width="414" height="89"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnT-k0-ceY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="104" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnT-k0-ceY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="104" height="89"/>
                                                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="4">
@@ -639,18 +606,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="0.0" y="0.0" width="165" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="165" height="60"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="54" height="123"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4q2-H9-OMr"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDh-lI-GIh">
-                                                                <rect key="frame" x="104" y="0.0" width="103" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDh-lI-GIh">
+                                                                <rect key="frame" x="104" y="0.0" width="103" height="89"/>
                                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="5">
@@ -665,18 +629,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="165" y="0.0" width="165" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="165" y="0.0" width="165" height="60"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="65" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="54" y="0.0" width="53" height="123"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kDz-YF-XsN"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziE-Lw-bmW">
-                                                                <rect key="frame" x="207" y="0.0" width="104" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziE-Lw-bmW">
+                                                                <rect key="frame" x="207" y="0.0" width="104" height="89"/>
                                                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="6">
@@ -691,18 +652,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="330" y="0.0" width="165" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="330" y="0.0" width="165" height="60"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="130" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="107" y="0.0" width="54" height="123"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VfE-Jk-TIq"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqG-JT-z4O">
-                                                                <rect key="frame" x="311" y="0.0" width="103" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqG-JT-z4O">
+                                                                <rect key="frame" x="311" y="0.0" width="103" height="89"/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="−">
@@ -717,11 +675,8 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="495" y="0.0" width="165" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="495" y="0.0" width="165" height="60"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="195" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="161" y="0.0" width="53" height="123"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dq2-qt-Lig"/>
@@ -737,18 +692,15 @@
                                                         <variation key="widthClass=regular" ambiguous="YES">
                                                             <rect key="frame" x="0.0" y="181" width="660" height="91"/>
                                                         </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="119" width="660" height="60"/>
-                                                        </variation>
-                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="226" width="260" height="113"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                            <rect key="frame" x="0.0" y="244" width="214" height="123"/>
                                                         </variation>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="t5W-co-vz2">
-                                                        <rect key="frame" x="0.0" y="272" width="414" height="91"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="t5W-co-vz2">
+                                                        <rect key="frame" x="0.0" y="267" width="414" height="90"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1W-lE-m5P">
-                                                                <rect key="frame" x="0.0" y="0.0" width="104" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1W-lE-m5P">
+                                                                <rect key="frame" x="0.0" y="0.0" width="104" height="90"/>
                                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="1">
@@ -763,18 +715,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="0.0" y="0.0" width="165" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="165" height="59"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="54" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WuA-Bm-h54"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmt-bF-94U">
-                                                                <rect key="frame" x="104" y="0.0" width="103" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmt-bF-94U">
+                                                                <rect key="frame" x="104" y="0.0" width="103" height="90"/>
                                                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="2">
@@ -789,18 +738,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="165" y="0.0" width="165" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="165" y="0.0" width="165" height="59"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="65" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="54" y="0.0" width="53" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ybm-U0-zgA"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ6-9W-Tbq">
-                                                                <rect key="frame" x="207" y="0.0" width="104" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ6-9W-Tbq">
+                                                                <rect key="frame" x="207" y="0.0" width="104" height="90"/>
                                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="3">
@@ -815,18 +761,15 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="330" y="0.0" width="165" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="330" y="0.0" width="165" height="59"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="130" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="107" y="0.0" width="54" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QHD-HN-2xO"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QN-4q-8wf">
-                                                                <rect key="frame" x="311" y="0.0" width="103" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QN-4q-8wf">
+                                                                <rect key="frame" x="311" y="0.0" width="103" height="90"/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="+">
@@ -841,11 +784,8 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="495" y="0.0" width="165" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="495" y="0.0" width="165" height="59"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="195" y="0.0" width="65" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="161" y="0.0" width="53" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QXm-gw-WzE"/>
@@ -861,21 +801,18 @@
                                                         <variation key="widthClass=regular" ambiguous="YES">
                                                             <rect key="frame" x="0.0" y="272" width="660" height="91"/>
                                                         </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="179" width="660" height="59"/>
-                                                        </variation>
-                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="339" width="260" height="113"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                            <rect key="frame" x="0.0" y="367" width="214" height="122"/>
                                                         </variation>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VLZ-la-CeI">
-                                                        <rect key="frame" x="0.0" y="363" width="414" height="91"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VLZ-la-CeI">
+                                                        <rect key="frame" x="0.0" y="357" width="414" height="89"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="th0-3E-BMU">
-                                                                <rect key="frame" x="0.0" y="0.0" width="207" height="91"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="th0-3E-BMU">
+                                                                <rect key="frame" x="0.0" y="0.0" width="207" height="89"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsF-Qu-b4U">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="104" height="91"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsF-Qu-b4U">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="104" height="89"/>
                                                                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="51"/>
                                                                         <state key="normal" title="0">
@@ -890,18 +827,15 @@
                                                                         <variation key="widthClass=regular" ambiguous="YES">
                                                                             <rect key="frame" x="0.0" y="0.0" width="165" height="91"/>
                                                                         </variation>
-                                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="165" height="60"/>
-                                                                        </variation>
-                                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="65" height="113"/>
+                                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="54" height="122"/>
                                                                         </variation>
                                                                         <connections>
                                                                             <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VfG-g6-3DL"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOs-vW-UF6">
-                                                                        <rect key="frame" x="104" y="0.0" width="103" height="91"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOs-vW-UF6">
+                                                                        <rect key="frame" x="104" y="0.0" width="103" height="89"/>
                                                                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                         <state key="normal" title=".">
@@ -916,11 +850,8 @@
                                                                         <variation key="widthClass=regular" ambiguous="YES">
                                                                             <rect key="frame" x="165" y="0.0" width="165" height="91"/>
                                                                         </variation>
-                                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                            <rect key="frame" x="165" y="0.0" width="165" height="60"/>
-                                                                        </variation>
-                                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                            <rect key="frame" x="65" y="0.0" width="65" height="113"/>
+                                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                            <rect key="frame" x="54" y="0.0" width="53" height="122"/>
                                                                         </variation>
                                                                         <connections>
                                                                             <action selector="dotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SdD-cV-aFo"/>
@@ -936,15 +867,12 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="0.0" y="0.0" width="330" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="330" height="60"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="107" height="122"/>
                                                                 </variation>
                                                             </stackView>
-                                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybZ-4h-vi5">
-                                                                <rect key="frame" x="207" y="0.0" width="207" height="91"/>
+                                                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybZ-4h-vi5">
+                                                                <rect key="frame" x="207" y="0.0" width="207" height="89"/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                                                 <state key="normal" title="=">
@@ -959,11 +887,8 @@
                                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                                     <rect key="frame" x="330" y="0.0" width="330" height="91"/>
                                                                 </variation>
-                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                                    <rect key="frame" x="330" y="0.0" width="330" height="60"/>
-                                                                </variation>
-                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="130" y="0.0" width="130" height="113"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="107" y="0.0" width="107" height="122"/>
                                                                 </variation>
                                                                 <connections>
                                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZER-C3-tRI"/>
@@ -979,11 +904,8 @@
                                                         <variation key="widthClass=regular" ambiguous="YES">
                                                             <rect key="frame" x="0.0" y="363" width="660" height="91"/>
                                                         </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="238" width="660" height="60"/>
-                                                        </variation>
-                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="452" width="260" height="113"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                            <rect key="frame" x="0.0" y="489" width="214" height="122"/>
                                                         </variation>
                                                     </stackView>
                                                 </subviews>
@@ -996,22 +918,14 @@
                                                 <variation key="widthClass=regular" ambiguous="YES">
                                                     <rect key="frame" x="100" y="0.0" width="660" height="454"/>
                                                 </variation>
-                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                    <rect key="frame" x="100" y="0.0" width="660" height="298"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                    <rect key="frame" x="100" y="0.0" width="260" height="565"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="146" y="0.0" width="214" height="611"/>
                                                 </variation>
                                             </stackView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="LOH-IL-BxN" firstAttribute="leading" secondItem="4Hd-kM-JNE" secondAttribute="leading" constant="146" id="J0K-sA-uDU"/>
-                                        </constraints>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
                                         <variation key="heightClass=regular" misplaced="YES">
                                             <rect key="frame" x="0.0" y="156" width="560" height="565"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="156" width="360" height="565"/>
                                         </variation>
                                     </stackView>
                                 </subviews>
@@ -1020,22 +934,46 @@
                                 </variation>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="UgK-uj-1YU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EH0-wS-FRR"/>
-                            <constraint firstItem="UgK-uj-1YU" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="TaM-3a-UKS"/>
-                            <constraint firstItem="UgK-uj-1YU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YcB-qj-4qu"/>
+                            <constraint firstItem="UgK-uj-1YU" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="4" id="5bN-FH-fcS"/>
+                            <constraint firstItem="UgK-uj-1YU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="EIB-JV-Zgj"/>
+                            <constraint firstItem="UgK-uj-1YU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RyY-ar-NnM"/>
+                            <constraint firstItem="UgK-uj-1YU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TYz-mr-oLg"/>
                             <constraint firstItem="4Yc-qh-TjG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="a2L-7M-r1A"/>
-                            <constraint firstItem="UgK-uj-1YU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="zOR-EF-0Xz"/>
+                            <constraint firstItem="UgK-uj-1YU" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-10" id="fa7-OY-vxI"/>
+                            <constraint firstItem="UgK-uj-1YU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="krD-1q-P1i"/>
+                            <constraint firstItem="LOH-IL-BxN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="146" id="oaN-du-oaM">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="UgK-uj-1YU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="zOR-EF-0Xz">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="5bN-FH-fcS"/>
+                                <exclude reference="EIB-JV-Zgj"/>
+                                <exclude reference="krD-1q-P1i"/>
                                 <exclude reference="zOR-EF-0Xz"/>
+                                <exclude reference="oaN-du-oaM"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="constraints">
                                 <include reference="zOR-EF-0Xz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="5bN-FH-fcS"/>
+                                <include reference="EIB-JV-Zgj"/>
+                                <exclude reference="RyY-ar-NnM"/>
+                                <exclude reference="TYz-mr-oLg"/>
+                                <exclude reference="fa7-OY-vxI"/>
+                                <include reference="krD-1q-P1i"/>
+                                <exclude reference="zOR-EF-0Xz"/>
+                                <include reference="oaN-du-oaM"/>
                             </mask>
                         </variation>
                     </view>
