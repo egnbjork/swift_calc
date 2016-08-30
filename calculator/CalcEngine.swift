@@ -16,11 +16,16 @@ class CalcEngine{
         accumulator = operand
     }
     
+    
+    
     private var operations: Dictionary<String, Operation> = [
         "π": Operation.Constant(M_PI),
-        "e": Operation.Constant(M_E),
+        "10ⁿ": Operation.UnaryOperation({pow(10,$0)}),
+        "x²": Operation.UnaryOperation({pow($0,2)}),
+        "1/x": Operation.UnaryOperation({1/$0}),
         "√": Operation.UnaryOperation(sqrt),
-        "cos": Operation.UnaryOperation(cos),
+        "xⁿ": Operation.BinaryOperation({pow($0,$1)}),
+        "ⁿ√": Operation.BinaryOperation({pow($0,1/$1)}),
         "×": Operation.BinaryOperation({$0*$1}),
         "÷": Operation.BinaryOperation({$0/$1}),
         "+": Operation.BinaryOperation({$0+$1}),
