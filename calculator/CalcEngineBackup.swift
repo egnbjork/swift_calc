@@ -11,7 +11,9 @@ import Foundation
 class CalcEngine{
     
     private var accumulator = 0.0
-   
+    private var operationsStack = [String]?()
+    private var operandsStack = [Double]?()
+    
     func setOperand(operand: Double){
         accumulator = operand
     }
@@ -39,21 +41,18 @@ class CalcEngine{
     }
     
     private var operations: Dictionary<String, Operation> = [
-        "π":    Operation.Constant(M_PI),
-        "e":    Operation.Constant(M_E),
-        "ln":   Operation.UnaryOperation({log($0)/log(M_E)}),
-        "lg":   Operation.UnaryOperation({log2($0)}),
-        "10ⁿ":  Operation.UnaryOperation({pow(10,$0)}),
-        "x²":   Operation.UnaryOperation({pow($0,2)}),
-        "1/x":  Operation.UnaryOperation({1/$0}),
-        "√":    Operation.UnaryOperation(sqrt),
-        "xⁿ":   Operation.BinaryOperation({pow($0,$1)}),
-        "ⁿ√":   Operation.BinaryOperation({pow($0,1/$1)}),
-        "×":    Operation.BinaryOperation({$0*$1}),
-        "÷":    Operation.BinaryOperation({$0/$1}),
-        "+":    Operation.BinaryOperation({$0+$1}),
-        "−":    Operation.BinaryOperation({$0-$1}),
-        "=":    Operation.Equals
+        "π": Operation.Constant(M_PI),
+        "10ⁿ": Operation.UnaryOperation({pow(10,$0)}),
+        "x²": Operation.UnaryOperation({pow($0,2)}),
+        "1/x": Operation.UnaryOperation({1/$0}),
+        "√": Operation.UnaryOperation(sqrt),
+        "xⁿ": Operation.BinaryOperation({pow($0,$1)}),
+        "ⁿ√": Operation.BinaryOperation({pow($0,1/$1)}),
+        "×": Operation.BinaryOperation({$0*$1}),
+        "÷": Operation.BinaryOperation({$0/$1}),
+        "+": Operation.BinaryOperation({$0+$1}),
+        "−": Operation.BinaryOperation({$0-$1}),
+        "=": Operation.Equals
     ]
     
     private enum Operation{
