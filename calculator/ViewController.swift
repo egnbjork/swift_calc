@@ -66,7 +66,9 @@ class ViewController: UIViewController {
     
     //change sign
     @IBAction func changeSignButton(sender: UIButton) {
+        if(displayValue != 0){
         displayValue *= -1
+        }
     }
     
     //dot
