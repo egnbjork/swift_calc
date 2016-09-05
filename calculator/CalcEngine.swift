@@ -11,7 +11,8 @@ import Foundation
 class CalcEngine{
     
     private var accumulator = 0.0
-   
+    private var lastOperation:PendingBinaryOperationInfo? = nil
+    
     func setOperand(operand: Double){
         accumulator = operand
     }
@@ -34,6 +35,7 @@ class CalcEngine{
                 pending = PendingBinaryOperationInfo(binaryFunc: function, firstOperand: accumulator)
             case .Equals:
                 executePendingBinaryOperation()
+                executeLastOperation()
             }
         }
     }
@@ -67,8 +69,18 @@ class CalcEngine{
     
     private func executePendingBinaryOperation(){
         if pending != nil {
+            
+            lastOperation = pending
+            lastOperation!.firstOperand = accumulator
+            
             accumulator = pending!.binaryFunc(pending!.firstOperand, accumulator)
             pending = nil
+        }
+    }
+    
+    private func executeLastOperation(){
+        if (pending == nil && lastOperation != nil) {
+            accumulator = lastOperation!.binaryFunc(lastOperation!.firstOperand, accumulator)
         }
     }
     
@@ -80,6 +92,7 @@ class CalcEngine{
     func clearContents(){
         accumulator = 0.0
         pending = nil
+        lastOperation = nil
     }
     
 }

@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     private var userIsInTheMiddleOfTyping = false
+    private var waitingForNumber = false
     private var engine = CalcEngine()
     
     private  var displayValue: Double {
@@ -81,6 +82,7 @@ class ViewController: UIViewController {
     
     //Mark: making math
     @IBAction private func performOperation(sender: UIButton) {
+        
         if userIsInTheMiddleOfTyping{
             engine.setOperand(displayValue)
             userIsInTheMiddleOfTyping = false
