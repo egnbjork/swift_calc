@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     @IBAction private func touchDigit(sender: UIButton) {
         let digit = sender.currentTitle!
         
-        if userIsInTheMiddleOfTyping{ //if not in the middle starts with zero
+        if userIsInTheMiddleOfTyping && displayValue != 0{ //if not in the middle starts with zero
             let textCurrentlyInDisplay = display.text!
             display.text = textCurrentlyInDisplay + digit
         } else{
@@ -58,7 +58,6 @@ class ViewController: UIViewController {
         if(display.text!.characters.count == 1 ||
             display.text!.characters.count == 2 && display.text!.hasPrefix("-")){ //hide minus
             displayValue = 0
-            userIsInTheMiddleOfTyping = false
         } else{
             display.text = display.text!.substringToIndex(display.text!.endIndex.predecessor())
         }
