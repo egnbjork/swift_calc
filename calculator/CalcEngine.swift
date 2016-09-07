@@ -12,8 +12,77 @@ class CalcEngine{
     
     private var accumulator = 0.0
     private var lastOperation:PendingBinaryOperationInfo? = nil
+    private var description = ""
+    
+    var isPartialResult: Bool{
+        get{
+            if pending != nil{
+                return true
+            }
+            else{
+                return false
+            }
+        }
+    }
+    
+    private func setDescription(input:Double){
+        
+        if description.hasSuffix((" = ")){ //removes description when new number is entered after equality sign
+            description = ""
+        }
+        
+        description += String(input)
+        
+        if(input - floor(input) >= 0){ //takes out floating zeros from doubles
+            description.removeRange((description.endIndex.advancedBy(-2) ..< description.endIndex))
+        }
+    }
+    
+    private func checkForDoubleEqualsSignInDescription(input:String) -> Bool{
+        if(input.containsString("=") && description.hasSuffix(" = ")){ //prevent for several equals signs
+            return false}
+        else if(input.containsString("=")){ //changes equals with equals which can be changed with "..."
+            description += " = "
+            return false
+        }
+        return true
+    }
+    
+    private func setDescription(input:String){
+        
+        if checkForDoubleEqualsSignInDescription(input) == false{
+            return
+        }
+        
+        if(description.hasSuffix(" = ") && //takes out equals when arithmetic operations are entered
+            (input == "+" ||
+                input == "-" ||
+                input == "×" ||
+                input == "÷")){
+            description.removeRange(Range<String.Index>(description.endIndex.advancedBy(-3) ..< description.endIndex))
+        }
+        else if(input == "√" || input == "ln" || input == "lg"){
+            if description.hasSuffix(" = "){
+                description.removeRange(Range<String.Index>(description.endIndex.advancedBy(-3) ..< description.endIndex))
+                description = input + "(" + description + ") = "
+                return
+            }
+            else{
+                description.insert(input.characters.first!, atIndex: description.endIndex.advancedBy(String(accumulator).characters.count*(-1)+2))
+                return
+            }
+            
+        }
+        
+        description = description + input
+    }
+    
+    func getDescription()-> String{
+        return description
+    }
     
     func setOperand(operand: Double){
+        setDescription(operand)
         accumulator = operand
     }
     
@@ -24,6 +93,7 @@ class CalcEngine{
     }
     
     func performOperation(symbol: String){
+        setDescription(symbol)
         if let operation = operations[symbol]{
             switch operation{
             case .Constant(let value):
@@ -31,11 +101,10 @@ class CalcEngine{
             case .UnaryOperation(let function):
                 accumulator = function(accumulator)
             case .BinaryOperation(let function):
-                executePendingBinaryOperation()
+                executePendingBinaryOperation(symbol)
                 pending = PendingBinaryOperationInfo(binaryFunc: function, firstOperand: accumulator)
             case .Equals:
-                executePendingBinaryOperation()
-                executeLastOperation()
+                executePendingBinaryOperation(symbol)
             }
         }
     }
@@ -67,20 +136,10 @@ class CalcEngine{
     
     private var pending: PendingBinaryOperationInfo?
     
-    private func executePendingBinaryOperation(){
+    private func executePendingBinaryOperation(symbol: String){
         if pending != nil {
-            
-            lastOperation = pending
-            lastOperation!.firstOperand = accumulator
-            
             accumulator = pending!.binaryFunc(pending!.firstOperand, accumulator)
             pending = nil
-        }
-    }
-    
-    private func executeLastOperation(){
-        if (pending == nil && lastOperation != nil) {
-            accumulator = lastOperation!.binaryFunc(lastOperation!.firstOperand, accumulator)
         }
     }
     
@@ -93,6 +152,7 @@ class CalcEngine{
         accumulator = 0.0
         pending = nil
         lastOperation = nil
+        description = ""
     }
     
 }

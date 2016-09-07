@@ -32,8 +32,21 @@ class ViewController: UIViewController {
 
     @IBOutlet private weak var display: UILabel!
     
-    //MARK: button actions
+    @IBOutlet private weak var calcDescription: UILabel!
     
+    func descriptionLabelOutput(){
+        //output and prepairs for = or ... symbols
+       
+        calcDescription!.text = engine.getDescription() + "   "
+        calcDescription!.text?.removeRange(Range<String.Index>((calcDescription!.text?.endIndex.advancedBy(-3))! ..< (calcDescription!.text?.endIndex)!))
+        
+        if engine.isPartialResult {
+            calcDescription!.text?.appendContentsOf("...")
+        }
+        
+    }
+    
+    //MARK: button actions
     //digits
     @IBAction private func touchDigit(sender: UIButton) {
         let digit = sender.currentTitle!
@@ -41,7 +54,8 @@ class ViewController: UIViewController {
         if userIsInTheMiddleOfTyping && displayValue != 0{ //if not in the middle starts with zero
             let textCurrentlyInDisplay = display.text!
             display.text = textCurrentlyInDisplay + digit
-        } else{
+        }
+        else{
             display.text = digit
         }
         userIsInTheMiddleOfTyping = true
@@ -52,6 +66,7 @@ class ViewController: UIViewController {
         engine.clearContents()
         displayValue = 0.0;
         userIsInTheMiddleOfTyping = false
+        descriptionLabelOutput()
     }
     
     //backspace
@@ -91,6 +106,7 @@ class ViewController: UIViewController {
             engine.performOperation(mathematicalSymbol)
         }
         displayValue = engine.result
+        descriptionLabelOutput()
     }
     
 }
