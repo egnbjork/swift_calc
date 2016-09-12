@@ -12,7 +12,28 @@ class CalcEngine{
     
     private var accumulator = 0.0
     private var lastOperation:PendingBinaryOperationInfo? = nil
-    private var description = ""
+    private var description = " "
+    
+    private var internalProgram = [AnyObject]()
+    
+    typealias PropertyList = AnyObject
+    var program: PropertyList{
+        get{
+            return internalProgram
+        }
+        set{
+            clearContents()
+            if let arrayOfOps = newValue as? [AnyObject] {
+                for op in arrayOfOps{
+                    if let operand = op as? Double{
+                        setOperand(operand)
+                    } else if let operation = op as? String{
+                        performOperation(operation)
+                    }
+                }
+            }
+        }
+    }
     
     var isPartialResult: Bool{
         get{
@@ -25,65 +46,36 @@ class CalcEngine{
         }
     }
     
-    private func setDescription(input:Double){
-        
-        if description.hasSuffix((" = ")){ //removes description when new number is entered after equality sign
-            description = ""
-        }
-        
-        description += String(input)
-        
-        if(input - floor(input) >= 0){ //takes out floating zeros from doubles
-            description.removeRange((description.endIndex.advancedBy(-2) ..< description.endIndex))
+    private func setDescription(input:AnyObject){
+        if let operand = input as? Double{
+            setDescription(operand)
+        }else if let operation = input as? String{
+            setDescription(operation)
         }
     }
-    
-    private func checkForDoubleEqualsSignInDescription(input:String) -> Bool{
-        if(input.containsString("=") && description.hasSuffix(" = ")){ //prevent for several equals signs
-            return false}
-        else if(input.containsString("=")){ //changes equals with equals which can be changed with "..."
-            description += " = "
-            return false
-        }
-        return true
-    }
-    
-    private func setDescription(input:String){
         
-        if checkForDoubleEqualsSignInDescription(input) == false{
-            return
-        }
-        
-        if(description.hasSuffix(" = ") && //takes out equals when arithmetic operations are entered
-            (input == "+" ||
-                input == "-" ||
-                input == "×" ||
-                input == "÷")){
-            description.removeRange(Range<String.Index>(description.endIndex.advancedBy(-3) ..< description.endIndex))
-        }
-        else if(input == "√" || input == "ln" || input == "lg"){
-            if description.hasSuffix(" = "){
-                description.removeRange(Range<String.Index>(description.endIndex.advancedBy(-3) ..< description.endIndex))
-                description = input + "(" + description + ") = "
-                return
-            }
-            else{
-                description.insert(input.characters.first!, atIndex: description.endIndex.advancedBy(String(accumulator).characters.count*(-1)+2))
-                return
-            }
-            
-        }
-        
-        description = description + input
-    }
-    
     func getDescription()-> String{
+        var description = " "
+        for item in internalProgram{
+            if let operand = item as? Double{
+                //clears input if typed number comes after equality sign
+                if let index = description.characters.indexOf("="){
+                    if index != description.endIndex{
+                        description.removeRange(description.startIndex ..< index.advancedBy(1))
+                    }
+                }
+                //takes out floating zeros from doubles
+                description += (operand - floor(operand) != 0) ? (String(operand)) : (String(Int(operand)))
+            } else if let operation = item as? String{
+                description += operation
+            }
+        }
         return description
     }
     
     func setOperand(operand: Double){
-        setDescription(operand)
         accumulator = operand
+        internalProgram.append(operand)
     }
     
     var result: Double{
@@ -93,7 +85,12 @@ class CalcEngine{
     }
     
     func performOperation(symbol: String){
-        setDescription(symbol)
+        //eliminate two operation one by one in stack
+        if (((internalProgram.last as? String)?.hasSuffix("=")) != nil){
+            internalProgram.removeLast()
+        }
+        internalProgram.append(symbol)
+        
         if let operation = operations[symbol]{
             switch operation{
             case .Constant(let value):
@@ -151,8 +148,7 @@ class CalcEngine{
     func clearContents(){
         accumulator = 0.0
         pending = nil
-        lastOperation = nil
-        description = ""
+        internalProgram.removeAll()
     }
     
 }

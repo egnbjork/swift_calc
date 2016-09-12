@@ -36,10 +36,9 @@ class ViewController: UIViewController {
     
     func descriptionLabelOutput(){
         //output and prepairs for = or ... symbols
-       
-        calcDescription!.text = engine.getDescription() + "   "
-        calcDescription!.text?.removeRange(Range<String.Index>((calcDescription!.text?.endIndex.advancedBy(-3))! ..< (calcDescription!.text?.endIndex)!))
         
+        calcDescription!.text = engine.getDescription()
+      
         if engine.isPartialResult {
             calcDescription!.text?.appendContentsOf("...")
         }
