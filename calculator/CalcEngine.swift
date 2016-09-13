@@ -12,7 +12,6 @@ class CalcEngine{
     
     private var accumulator = 0.0
     private var lastOperation:PendingBinaryOperationInfo? = nil
-    private var description = " "
     
     private var internalProgram = [AnyObject]()
     
@@ -75,6 +74,9 @@ class CalcEngine{
     
     func setOperand(operand: Double){
         accumulator = operand
+        if((internalProgram.last as? Double) != nil){
+            clearContents()
+        }
         internalProgram.append(operand)
     }
     
@@ -85,10 +87,11 @@ class CalcEngine{
     }
     
     func performOperation(symbol: String){
-        //eliminate two operation one by one in stack
+        //eliminate two operations one by one in stack
         if (((internalProgram.last as? String)?.hasSuffix("=")) != nil){
             internalProgram.removeLast()
         }
+    
         internalProgram.append(symbol)
         
         if let operation = operations[symbol]{
@@ -135,6 +138,9 @@ class CalcEngine{
     
     private func executePendingBinaryOperation(symbol: String){
         if pending != nil {
+            if(pending?.firstOperand == accumulator){
+                internalProgram.append(pending!.firstOperand)
+            }
             accumulator = pending!.binaryFunc(pending!.firstOperand, accumulator)
             pending = nil
         }

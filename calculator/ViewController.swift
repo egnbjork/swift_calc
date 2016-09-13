@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         
         calcDescription!.text = engine.getDescription()
       
-        if engine.isPartialResult {
+        if engine.isPartialResult{
             calcDescription!.text?.appendContentsOf("...")
         }
         
